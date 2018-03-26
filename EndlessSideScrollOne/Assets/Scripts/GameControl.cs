@@ -52,4 +52,9 @@ public class GameControl : MonoBehaviour
         score++;
         sText.text = score.ToString();
     }
+
+    public void QuitGame() //added to be able to use the Exit Game button if player loses.
+    {
+        Application.Quit();
+    }
 }
